@@ -23,23 +23,17 @@ poetry install
 ## Add aws credentials .env
 
 Add credentials
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
+
+    AWS_ACCESS_KEY_ID=
+    AWS_SECRET_ACCESS_KEY=
 
 ## Usage
 The utility supports the following commands:
 
 Upload a file:
 
-s3_zip_uploader <file URL> <S3 bucket name> <S3 key prefix (optional)>
-
-For example:
-
 s3_zip_uploader https://example.com/file.zip test-bucket ""
 
-Run tests
-
-pytest
 ## Additional options:
 
 <file URL> - The URL of the file you want to upload.
