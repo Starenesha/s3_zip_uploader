@@ -1,6 +1,7 @@
 ## Description
 
-CLI Uploader is a command-line utility for uploading files to an S3 storage.
+Create CLI utility that as an argument receives URL to the ZIP archive and upload archives files to the
+S3 with concurrency.
 
 ## Installation
 
