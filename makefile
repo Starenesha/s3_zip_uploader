@@ -5,7 +5,7 @@ build:
 	poetry build
 
 package-install:
-	python3 -m pip uninstall cli_uploader -y
+	python3 -m pip uninstall s3_zip_uploader -y
 	python3 -m pip install dist/*.whl
 
 setup: install build package-install
