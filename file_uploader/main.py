@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from file_uploader.cli import parse_input
-from file_uploader.uploader import Uploader
+from file_uploader.loader import Uploader
 
 
 def main():
