@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "se_zip_uploader"
+version = "0.1.0"
+description = "cli-utility to upload archive files to S3"
+authors = ["starenesha <olgastarynenko@gmail.com>"]
+repository = "https://github.com/starenesha/cli_uploader"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Natural Language :: English",
+  "Environment :: Console"
+]
+packages = [
+  { include = "file_uploader" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+boto3 = "^1.18"
+environs = "9.5.0"
+moto = "4.2.5"
+requests="2.31.0"
+
+[tool.poetry.scripts]
+cli_uploader = "file_uploader.main:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+pytest-cov = "^4.0.0"
+pytest_mock = "3.11.1"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
