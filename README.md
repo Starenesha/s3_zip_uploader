@@ -8,17 +8,17 @@ To install the utility, follow these steps:
 
 2. Install [Poetry](https://python-poetry.org/docs/#installation) for managing dependencies and virtual environment:
 
-   pip install poetry
+   `pip install poetry`
 
 
 ## Clone the repository:
 
-git clone https://github.com/starenesha/s3_zip_uploader.git
-cd s3_zip_uploader
+`git clone https://github.com/starenesha/s3_zip_uploader.git
+cd s3_zip_uploader`
 
 ## Install the dependencies:
 
-poetry install
+   `poetry install`
 
 ## Add aws credentials .env
 
@@ -32,7 +32,7 @@ The utility supports the following commands:
 
 Upload a file:
 
-s3_zip_uploader https://example.com/file.zip test-bucket ""
+   `s3_zip_uploader https://example.com/file.zip test-bucket ""`
 
 ## Additional options:
 
